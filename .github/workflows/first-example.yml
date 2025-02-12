@@ -4,18 +4,18 @@ on: push
 
 jobs: 
     first_job:
-    runs-on: ubuntu-latest
-    steps:
-    -  name: checkout Repo
-        uses: actions/checkout@v4
+        runs-on: ubuntu-latest
+        steps:
+        -   name: checkout Repo
+            uses: actions/checkout@v4
     
-    - name: Welcome message
-      run: echo "My first Github Actions Job"
+        -   name: Welcome message
+            run: echo "My first Github Actions Job"
 
-    - name: List Files
-      run: ls
+        -   name: List Files
+            run: ls
 
-    - name: Read file
-      run: cat Readme.md
+        -   name: Read file
+            run: cat Readme.md
     
       
