@@ -14,7 +14,9 @@ jobs:
             run: ls -ltrha            
 
         -   name: Executing shell script
-            run: ./ascii-script.sh
+            run: |
+                chmod +x ascii-script.sh
+                ./ascii-script.sh
 
         -   name: list Repo files
             run: ls -ltrha
