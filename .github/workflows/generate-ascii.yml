@@ -10,7 +10,7 @@ jobs:
         -   name: checkout Repo
             uses: actions/checkout@v4
 
-        -   name: Insatll Cowsay program
+        -   name: Install Cowsay program
             run: sudo apt-get install cowsay -y
 
         -   name: Execute Cowsay CMD
